@@ -1,0 +1,42 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组array</title>
+  </head>
+  <body>
+    
+    <script>
+
+        var arr = ["it","shangxuetang","baizhan"]   //[0,1,2]   下标
+
+        var names = [];
+        names[0] = "iwen"
+        names[1] = "frank"
+
+        console.log(names);
+
+
+        var info = [20,"iwen",true]
+        console.log(info);
+
+
+        //多维数组：数组内嵌套一层数组，成为二维数组（再嵌套就是三维）
+        var towarr = [100,200,["iwen","frank"]] 
+        console.log(towarr);
+
+
+        //下标：赋值，读取
+        var user = ["iwen","ime","frank"]
+        console.log(user[0]);      //iwen
+        console.log(user.length);
+        console.log(user[5]);      //数组越界：返回undefined
+
+
+
+    </script>
+
+  </body>
+  </html>

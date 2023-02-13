@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组方法shift(),头部位置删除和unshift()，头部位置增加</title>
+</head>
+<body>
+    
+    <script>
+
+        var names = ["iwen","ime","frank"];
+        names.shift();   //删除了"iwen"
+        console.log(names);
+
+        //shift（）：清空数组元素
+
+        var arr = [];
+        console.log(arr.shift());  //undefined
+
+        var arr1 = [100,200,300];
+        var item;
+        while(item = arr1.shift()){  //每次删除一个值（删除100，将100赋值给item，打印出来）
+            console.log(item);
+        }
+        console.log(arr1);
+
+
+
+        var arr2 = [200];
+        arr.unshift(100,120,140);
+        console.log(arr2); //100,120,140,200
+
+
+    </script>
+
+</body>
+</html>

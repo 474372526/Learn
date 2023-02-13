@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网页</title>
+    <style>
+
+        .box{
+            width: 300px;
+            height: 300px;
+            border-radius:50%;
+         }
+
+         @media screen and (max-width=768px) {
+            .box{
+                background-color: aqua;
+            }
+         }
+
+         @media screen and (min-width=768px) and (max-width=996px){
+            .box{
+                background-color: green;
+            }
+         }
+
+         @media screen and (min-width=996px){
+            .box{
+                background-color: red;
+            }
+         }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+<p>蓝色是手机<br>绿色是平板<br>红色是电脑</p>
+
+</body>
+
+</html>

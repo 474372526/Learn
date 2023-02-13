@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    <script>
+
+        function add(){    //add是函数名，可自定义
+            var x = 10;
+            var y = 20; 
+            console.log(x + y);
+        }
+
+        add();  //调用函数
+
+
+
+        //函数参数
+        function add1(x,y){
+            console.log(x + y);
+        }
+
+        add1(10,20);
+        add1(100,200);
+        add1(5,6);
+        add1(10,5);
+
+
+
+        //例：用result接收函数add2运算结果
+        function add2(x,y){
+            return x + y      //return：返回值
+        }
+
+        var result = add2(10,20);
+        console.log(result);
+
+        //提示：return后面不能添加任何代码，不会执行
+
+
+
+
+    </script>
+
+</body>
+</html>

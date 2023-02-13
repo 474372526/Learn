@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join以指定参数作为分隔符，链接所有数组成员，数组转字符串</title>
+</head>
+<body>
+    
+    <script>
+
+        var arr = [10,20,30,40]
+        console.log(arr.join());  //10,20,30,40,
+        console.log(arr.join("|"));  //10|20|30|40
+        console.log(arr.join(" "));  //10 20 30 40(中间有空格)
+
+
+        //数组成员为null,undefiend或空位时，会转为空字符串
+        var arr1 = [10,20,null,undefined];
+        console.log(arr1.join("|"));    //10|20||
+
+
+        //数组的join和split配合可实现数组与字符串互换
+        var arr2 = ["hello","world"];
+        var result = arr2.join(" ")    //hello world
+        console.log(result.split(" "));   //["hello","world"]
+
+
+
+
+
+    </script>
+
+</body>
+</html>

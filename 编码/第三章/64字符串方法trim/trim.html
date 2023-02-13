@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>去除两端空格</title>
+</head>
+<body>
+    
+<script>
+
+     var name = "     itbaizhan     "
+     var result = name.trim()  
+     console.log(result);
+
+
+     var name2 = "\r\nitbaizhan  \t";
+     console.log(name2.trim());
+
+     //字符串中间空格去不掉
+    var name3 = "it   bai   zhan"
+    console.log(name3.trim());
+
+
+    //单独去头部、尾部空格
+    var name4 = "   itbaizhan  ";
+    console.log(name4.trimStart());  //去头空格，留尾
+    console.log(name4.trimEnd());    //去尾空格，留头
+
+
+
+</script>
+
+</body>
+</html>
