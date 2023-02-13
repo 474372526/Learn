@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分割字符串</title>
+</head>
+<body>
+    
+    <script>
+        //按规则"|"切割
+        var name = "it|sxt|itbaizhan";
+        console.log(name.split("|"));  //['it','sxt','itbaizhan'] === 数组
+
+
+        //切割空字符串("")
+        var name1 = "s|x|t";
+        console.log(name1.split(""));
+        //日常使用
+        var name2 = "hello";
+        console.log(name2.split("")); //查看字符串每一个字符
+
+
+        //省略参数()
+        console.log(name2.split());  //[hello]
+
+
+        //第二参数限定返回数组最大成员
+        var name3 = "itbaizhansxt"
+        console.log(name3.split(""));   //得到每个单独的字符
+        console.log(name3.split("",5));   //得到5个单独的字符(5代表长度，从1开始)
+
+
+
+    </script>
+
+</body>
+</html>
